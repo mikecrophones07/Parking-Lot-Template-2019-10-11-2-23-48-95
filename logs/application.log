@@ -650,3 +650,20 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2019-10-19 18:34:14.883 DEBUG 103880 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
 2019-10-19 18:34:14.892 DEBUG 103880 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@9d618d2]
 2019-10-19 18:34:14.899 DEBUG 103880 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-10-19 18:43:37.087  INFO 102696 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL14-W10 with PID 102696 (started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 18:43:37.088  INFO 102696 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-19 18:43:37.099 DEBUG 102696 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4081f425
+2019-10-19 18:43:37.975 DEBUG 102696 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 18:43:38.195  INFO 102696 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 18:43:38.206 DEBUG 102696 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 18:43:38.252 DEBUG 102696 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-19 18:43:38.275 DEBUG 102696 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 18:43:38.284 DEBUG 102696 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 18:43:38.351  INFO 102696 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-19 18:43:38.351  INFO 102696 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-19 18:43:38.361  INFO 102696 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
+2019-10-19 18:43:38.385  INFO 102696 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.585 seconds (JVM running for 2.432)
+2019-10-19 18:43:38.457 DEBUG 102696 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot)
+2019-10-19 18:43:38.491 DEBUG 102696 --- [Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.Entity.ParkingLot@215f2d17]
+2019-10-19 18:43:38.512 DEBUG 102696 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4081f425, started on Sat Oct 19 18:43:37 CST 2019
+2019-10-19 18:43:38.514  INFO 102696 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,0 +1,9 @@
+2019-10-19 18:20:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SUCCESS[*] "; expected "SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+success [42001-199]
+2019-10-19 18:20:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]""flyway_schema_history"; SQL statement:
+SELECT * FROM "flyway_schema_history [42000-199]
+2019-10-19 18:20:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]""flyway_schema_history;"; SQL statement:
+SELECT * FROM "flyway_schema_history; [42000-199]
