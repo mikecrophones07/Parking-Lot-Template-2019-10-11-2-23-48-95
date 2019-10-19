@@ -1,0 +1,19 @@
+logging.file: logs/application.log
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        hibernate: DEBUG
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./target/parkingLot
+  hibernate:
+    ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2-console

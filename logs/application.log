@@ -1,0 +1,652 @@
+2019-10-19 17:18:25.807  INFO 99432 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 99432 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 17:18:25.809  INFO 99432 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 17:18:26.850  INFO 99432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 17:18:26.872  INFO 99432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 17:18:26.873  INFO 99432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-19 17:18:26.975  INFO 99432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 17:18:26.975 DEBUG 99432 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 17:18:26.975  INFO 99432 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1138 ms
+2019-10-19 17:18:27.230 DEBUG 99432 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-10-19 17:18:27.231 DEBUG 99432 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-19 17:18:27.232 DEBUG 99432 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-10-19 17:18:27.233 DEBUG 99432 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-19 17:18:27.233 DEBUG 99432 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-19 17:18:27.233 DEBUG 99432 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-19 17:18:27.234 DEBUG 99432 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-19 17:18:27.235 DEBUG 99432 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-19 17:18:27.235 DEBUG 99432 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-19 17:18:27.235 DEBUG 99432 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-19 17:18:27.235 DEBUG 99432 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-19 17:18:27.238 DEBUG 99432 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-19 17:18:27.238 DEBUG 99432 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-19 17:18:27.238 DEBUG 99432 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-19 17:18:27.238 DEBUG 99432 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-19 17:18:27.238 DEBUG 99432 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-19 17:18:27.258 DEBUG 99432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 17:18:27.335  INFO 99432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 17:18:27.340 DEBUG 99432 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 17:18:27.380 DEBUG 99432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2019-10-19 17:18:27.387 DEBUG 99432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 17:18:27.393 DEBUG 99432 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 17:18:27.514  INFO 99432 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-19 17:18:27.593  INFO 99432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-19 17:18:27.596  INFO 99432 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 2.195 seconds (JVM running for 2.452)
+2019-10-19 17:48:04.938  INFO 105312 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL14-W10 with PID 105312 (started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 17:48:04.939  INFO 105312 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-19 17:48:04.951 DEBUG 105312 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3d52e31b
+2019-10-19 17:48:05.836 DEBUG 105312 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-19 17:48:05.837 DEBUG 105312 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-19 17:48:05.838 DEBUG 105312 --- [Test worker] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-19 17:48:05.845 DEBUG 105312 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-19 17:48:05.846 DEBUG 105312 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-19 17:48:05.846 DEBUG 105312 --- [Test worker] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-19 17:48:05.847 DEBUG 105312 --- [Test worker] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-19 17:48:05.847 DEBUG 105312 --- [Test worker] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-19 17:48:05.848 DEBUG 105312 --- [Test worker] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-19 17:48:05.849 DEBUG 105312 --- [Test worker] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-19 17:48:05.849 DEBUG 105312 --- [Test worker] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-19 17:48:05.849 DEBUG 105312 --- [Test worker] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-19 17:48:05.850 DEBUG 105312 --- [Test worker] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-19 17:48:05.854 DEBUG 105312 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-19 17:48:05.855 DEBUG 105312 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-19 17:48:05.855 DEBUG 105312 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-19 17:48:05.855 DEBUG 105312 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-19 17:48:05.855 DEBUG 105312 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-19 17:48:05.961 DEBUG 105312 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 17:48:06.223  INFO 105312 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 17:48:06.237 DEBUG 105312 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 17:48:06.291 DEBUG 105312 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-19 17:48:06.320 DEBUG 105312 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 17:48:06.332 DEBUG 105312 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 17:48:06.420  INFO 105312 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-19 17:48:06.420  INFO 105312 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-19 17:48:06.437  INFO 105312 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-19 17:48:06.476  INFO 105312 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.856 seconds (JVM running for 3.227)
+2019-10-19 17:48:44.855 DEBUG 105312 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot)
+2019-10-19 17:48:45.339 DEBUG 105312 --- [Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.Entity.ParkingLot@5ad765fe]
+2019-10-19 17:48:51.129 DEBUG 105312 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3d52e31b, started on Sat Oct 19 17:48:04 CST 2019
+2019-10-19 17:48:51.133  INFO 105312 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-19 17:52:01.101  INFO 102060 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL14-W10 with PID 102060 (started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 17:52:01.102  INFO 102060 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-19 17:52:01.113 DEBUG 102060 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@330aa62f
+2019-10-19 17:52:01.900  WARN 102060 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parkingLotController': Unsatisfied dependency expressed through field 'parkingLotService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.thoughtworks.parking_lot.Service.ParkingLotService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-10-19 17:52:01.904  INFO 102060 --- [Test worker] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-19 17:52:01.943 ERROR 102060 --- [Test worker] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field parkingLotService in com.thoughtworks.parking_lot.Controller.ParkingLotController required a bean of type 'com.thoughtworks.parking_lot.Service.ParkingLotService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.thoughtworks.parking_lot.Service.ParkingLotService' in your configuration.
+
+2019-10-19 17:52:01.952 ERROR 102060 --- [Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@64d798f6] to prepare test instance [com.thoughtworks.parking_lot.Controller.ParkingLotControllerTest@5baaa023]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) ~[na:na]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) ~[na:na]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'parkingLotController': Unsatisfied dependency expressed through field 'parkingLotService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.thoughtworks.parking_lot.Service.ParkingLotService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:847) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.thoughtworks.parking_lot.Service.ParkingLotService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1662) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1221) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1175) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 68 common frames omitted
+
+2019-10-19 17:52:34.915  INFO 102700 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL14-W10 with PID 102700 (started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 17:52:34.916  INFO 102700 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-19 17:52:34.927 DEBUG 102700 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4d91404f
+2019-10-19 17:52:35.681 DEBUG 102700 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-19 17:52:35.682 DEBUG 102700 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-19 17:52:35.682 DEBUG 102700 --- [Test worker] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-19 17:52:35.689 DEBUG 102700 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-19 17:52:35.690 DEBUG 102700 --- [Test worker] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-19 17:52:35.691 DEBUG 102700 --- [Test worker] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-19 17:52:35.691 DEBUG 102700 --- [Test worker] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-19 17:52:35.692 DEBUG 102700 --- [Test worker] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-19 17:52:35.693 DEBUG 102700 --- [Test worker] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-19 17:52:35.694 DEBUG 102700 --- [Test worker] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-19 17:52:35.694 DEBUG 102700 --- [Test worker] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-19 17:52:35.694 DEBUG 102700 --- [Test worker] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-19 17:52:35.694 DEBUG 102700 --- [Test worker] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-19 17:52:35.699 DEBUG 102700 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-19 17:52:35.699 DEBUG 102700 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-19 17:52:35.701 DEBUG 102700 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-19 17:52:35.701 DEBUG 102700 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-19 17:52:35.701 DEBUG 102700 --- [Test worker] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-19 17:52:35.792 DEBUG 102700 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 17:52:36.005  INFO 102700 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 17:52:36.016 DEBUG 102700 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 17:52:36.064 DEBUG 102700 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-19 17:52:36.086 DEBUG 102700 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 17:52:36.094 DEBUG 102700 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 17:52:36.157  INFO 102700 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-19 17:52:36.157  INFO 102700 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-19 17:52:36.166  INFO 102700 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2019-10-19 17:52:36.190  INFO 102700 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.58 seconds (JVM running for 2.433)
+2019-10-19 17:52:36.254 DEBUG 102700 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot)
+2019-10-19 17:52:36.284 DEBUG 102700 --- [Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.Entity.ParkingLot@707cb58]
+2019-10-19 17:52:36.300 DEBUG 102700 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4d91404f, started on Sat Oct 19 17:52:34 CST 2019
+2019-10-19 17:52:36.302  INFO 102700 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-19 18:11:12.960  INFO 93060 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 93060 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 18:11:12.962  INFO 93060 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 18:11:13.666  INFO 93060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 18:11:13.712  INFO 93060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-10-19 18:11:14.034  INFO 93060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d02a86fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 18:11:14.367  INFO 93060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 18:11:14.387  INFO 93060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 18:11:14.388  INFO 93060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 18:11:14.494  INFO 93060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 18:11:14.494 DEBUG 93060 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 18:11:14.494  INFO 93060 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1503 ms
+2019-10-19 18:11:14.862  INFO 93060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-19 18:11:15.061  INFO 93060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-19 18:11:15.107 DEBUG 93060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@8bcc55f
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/D:/ECHONMI/ECHONMI_ITA-JAVA/Day10_Parking_Lot_Spring_Boot_Application2/build/classes/java/main/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.thoughtworks.parking_lot.Entity.ParkingLot]
+	Mapping files names []
+	Properties []
+2019-10-19 18:11:15.117 DEBUG 93060 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-10-19 18:11:15.118 DEBUG 93060 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-10-19 18:11:15.119 DEBUG 93060 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-10-19 18:11:15.153  INFO 93060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-19 18:11:15.154  INFO 93060 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-19 18:11:15.243 DEBUG 93060 --- [main] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-10-19 18:11:15.300 DEBUG 93060 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-10-19 18:11:15.302 DEBUG 93060 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-10-19 18:11:15.310  INFO 93060 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-19 18:11:15.333 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@49653791
+2019-10-19 18:11:15.334 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@49653791
+2019-10-19 18:11:15.334 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@49653791
+2019-10-19 18:11:15.334 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1b0e031b
+2019-10-19 18:11:15.335 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@4e5c8ef3
+2019-10-19 18:11:15.335 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@22865072
+2019-10-19 18:11:15.337 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@3a0896b3
+2019-10-19 18:11:15.337 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@3a0896b3
+2019-10-19 18:11:15.337 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3a0896b3
+2019-10-19 18:11:15.338 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@1753475d
+2019-10-19 18:11:15.338 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@1753475d
+2019-10-19 18:11:15.338 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1753475d
+2019-10-19 18:11:15.339 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@5c70d7f0
+2019-10-19 18:11:15.339 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@5c70d7f0
+2019-10-19 18:11:15.339 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5c70d7f0
+2019-10-19 18:11:15.340 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@7f5ce33e
+2019-10-19 18:11:15.340 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@7f5ce33e
+2019-10-19 18:11:15.340 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7f5ce33e
+2019-10-19 18:11:15.341 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@6eede35e
+2019-10-19 18:11:15.341 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@6eede35e
+2019-10-19 18:11:15.341 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@6eede35e
+2019-10-19 18:11:15.342 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@46d0f89c
+2019-10-19 18:11:15.342 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@46d0f89c
+2019-10-19 18:11:15.342 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@46d0f89c
+2019-10-19 18:11:15.343 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@58164e9a
+2019-10-19 18:11:15.343 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@58164e9a
+2019-10-19 18:11:15.343 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@58164e9a
+2019-10-19 18:11:15.344 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4f26425b
+2019-10-19 18:11:15.344 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4f26425b
+2019-10-19 18:11:15.345 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@615e83ac
+2019-10-19 18:11:15.345 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@615e83ac
+2019-10-19 18:11:15.345 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@18c7f6b5
+2019-10-19 18:11:15.346 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@18c7f6b5
+2019-10-19 18:11:15.346 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@474e34e4
+2019-10-19 18:11:15.346 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@51eb0e84
+2019-10-19 18:11:15.347 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@3dea226b
+2019-10-19 18:11:15.347 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@3dea226b
+2019-10-19 18:11:15.348 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@53bb71e5
+2019-10-19 18:11:15.348 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@53bb71e5
+2019-10-19 18:11:15.349 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@698d6d30
+2019-10-19 18:11:15.349 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@698d6d30
+2019-10-19 18:11:15.350 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@28cb86b2
+2019-10-19 18:11:15.350 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@28cb86b2
+2019-10-19 18:11:15.351 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4b476233
+2019-10-19 18:11:15.351 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4b476233
+2019-10-19 18:11:15.352 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@586843bc
+2019-10-19 18:11:15.352 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@586843bc
+2019-10-19 18:11:15.353 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7cd3e0da
+2019-10-19 18:11:15.353 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7cd3e0da
+2019-10-19 18:11:15.353 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5b14f482
+2019-10-19 18:11:15.353 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5b14f482
+2019-10-19 18:11:15.354 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@fe8aaeb
+2019-10-19 18:11:15.355 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@fe8aaeb
+2019-10-19 18:11:15.355 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@43e3a390
+2019-10-19 18:11:15.356 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@43e3a390
+2019-10-19 18:11:15.356 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@49ced9c7
+2019-10-19 18:11:15.356 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@49ced9c7
+2019-10-19 18:11:15.357 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@2b9aeedb
+2019-10-19 18:11:15.357 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2b9aeedb
+2019-10-19 18:11:15.358 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2b9aeedb
+2019-10-19 18:11:15.358 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@790ac3e0
+2019-10-19 18:11:15.359 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@3d512652
+2019-10-19 18:11:15.359 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3d512652
+2019-10-19 18:11:15.359 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3d512652
+2019-10-19 18:11:15.360 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@42107318
+2019-10-19 18:11:15.360 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@b75b890
+2019-10-19 18:11:15.360 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@b75b890
+2019-10-19 18:11:15.361 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@3c60c681
+2019-10-19 18:11:15.361 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@3c60c681
+2019-10-19 18:11:15.362 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@117b2cc6
+2019-10-19 18:11:15.362 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@117b2cc6
+2019-10-19 18:11:15.362 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@d70e9a
+2019-10-19 18:11:15.362 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@d70e9a
+2019-10-19 18:11:15.363 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@71b26880
+2019-10-19 18:11:15.363 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@71b26880
+2019-10-19 18:11:15.364 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@516195cf
+2019-10-19 18:11:15.365 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@4c5da4f9
+2019-10-19 18:11:15.365 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@4c5da4f9
+2019-10-19 18:11:15.365 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@4c5da4f9
+2019-10-19 18:11:15.366 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7ad889be
+2019-10-19 18:11:15.366 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7ad889be
+2019-10-19 18:11:15.366 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7ad889be
+2019-10-19 18:11:15.366 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@762bf32d
+2019-10-19 18:11:15.367 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@34fcd292
+2019-10-19 18:11:15.367 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@2b2a4332
+2019-10-19 18:11:15.367 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@2b2a4332
+2019-10-19 18:11:15.367 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@2b2a4332
+2019-10-19 18:11:15.368 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@66234b0f
+2019-10-19 18:11:15.368 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@66234b0f
+2019-10-19 18:11:15.368 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@66234b0f
+2019-10-19 18:11:15.368 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@b5c902
+2019-10-19 18:11:15.369 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@bf2aa32
+2019-10-19 18:11:15.369 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@70f4f89e
+2019-10-19 18:11:15.369 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@70f4f89e
+2019-10-19 18:11:15.370 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5be51aa
+2019-10-19 18:11:15.371 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@83b0d0f
+2019-10-19 18:11:15.371 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@83b0d0f
+2019-10-19 18:11:15.372 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@566fe83c
+2019-10-19 18:11:15.372 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@566fe83c
+2019-10-19 18:11:15.372 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@16bbaab3
+2019-10-19 18:11:15.372 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1ffd0114
+2019-10-19 18:11:15.373 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@4adf3582
+2019-10-19 18:11:15.375 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@7c5f29c6
+2019-10-19 18:11:15.375 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7c5f29c6
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@61ab6521
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@328e4ec2
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7757025d
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@68fc9167
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@52c46334
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@12fccff0
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5d767218
+2019-10-19 18:11:15.376 DEBUG 93060 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@510da778
+2019-10-19 18:11:15.384 DEBUG 93060 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4d4df0f4] into BootstrapContext; was [null]
+2019-10-19 18:11:15.384 DEBUG 93060 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4d4df0f4) [was null]
+2019-10-19 18:11:15.384 DEBUG 93060 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@14ed7ddf] into BootstrapContext; was [null]
+2019-10-19 18:11:15.385 DEBUG 93060 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@892af0e] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@446c8c72]
+2019-10-19 18:11:15.416 DEBUG 93060 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4d4df0f4]
+2019-10-19 18:11:15.416 DEBUG 93060 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4d4df0f4]
+2019-10-19 18:11:15.423 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-10-19 18:11:15.424 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-10-19 18:11:15.424 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-10-19 18:11:15.424 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-10-19 18:11:15.425 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-10-19 18:11:15.425 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-10-19 18:11:15.425 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-10-19 18:11:15.426 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-10-19 18:11:15.427 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-10-19 18:11:15.427 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-10-19 18:11:15.427 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-10-19 18:11:15.428 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-10-19 18:11:15.428 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-10-19 18:11:15.428 DEBUG 93060 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-10-19 18:11:15.432 DEBUG 93060 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : H2
+    version : 1.4.199 (2019-03-13)
+      major : 1
+      minor : 4
+2019-10-19 18:11:15.432 DEBUG 93060 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.199 (2019-03-13)
+      major : 1
+      minor : 4
+2019-10-19 18:11:15.433 DEBUG 93060 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.1
+2019-10-19 18:11:15.440  INFO 93060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-19 18:11:15.481 DEBUG 93060 --- [main] o.h.e.j.env.spi.IdentifierHelperBuilder  : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2019-10-19 18:11:15.490 DEBUG 93060 --- [main] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-10-19 18:11:15.492 DEBUG 93060 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a120c88] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@285bf5ac]
+2019-10-19 18:11:15.524 DEBUG 93060 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.thoughtworks.parking_lot.Entity.ParkingLot
+2019-10-19 18:11:15.537 DEBUG 93060 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-10-19 18:11:15.540 DEBUG 93060 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name ParkingLot
+2019-10-19 18:11:15.544 DEBUG 93060 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity com.thoughtworks.parking_lot.Entity.ParkingLot on table parking_lot
+2019-10-19 18:11:15.553  WARN 93060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+2019-10-19 18:11:15.554  INFO 93060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-19 18:11:15.565  INFO 93060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-19 18:11:15.568  INFO 93060 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-19 18:11:15.579  INFO 93060 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-19 18:11:15.583 ERROR 93060 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.thoughtworks.parking_lot.ParkingLotApplication.main(ParkingLotApplication.java:10) ~[main/:na]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 16 common frames omitted
+
+2019-10-19 18:11:53.608  INFO 106204 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 106204 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 18:11:53.610  INFO 106204 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 18:11:54.271  INFO 106204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 18:11:54.315  INFO 106204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 1 repository interfaces.
+2019-10-19 18:11:54.622  INFO 106204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4606383f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 18:11:54.924  INFO 106204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 18:11:54.947  INFO 106204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 18:11:54.948  INFO 106204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 18:11:55.062  INFO 106204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 18:11:55.063 DEBUG 106204 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 18:11:55.063  INFO 106204 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1424 ms
+2019-10-19 18:11:55.458  INFO 106204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-19 18:11:55.599  INFO 106204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-19 18:11:55.645  INFO 106204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-19 18:11:55.689  INFO 106204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-19 18:11:55.690  INFO 106204 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-19 18:11:55.805  INFO 106204 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-19 18:11:55.910  INFO 106204 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-19 18:11:56.013  WARN 106204 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+2019-10-19 18:11:56.014  INFO 106204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-19 18:11:56.022  INFO 106204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-19 18:11:56.026  INFO 106204 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-19 18:11:56.038  INFO 106204 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-19 18:11:56.042 ERROR 106204 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.thoughtworks.parking_lot.ParkingLotApplication.main(ParkingLotApplication.java:10) ~[main/:na]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 16 common frames omitted
+
+2019-10-19 18:13:06.314  INFO 87712 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 87712 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 18:13:06.316  INFO 87712 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 18:13:07.053  INFO 87712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 18:13:07.099  INFO 87712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 1 repository interfaces.
+2019-10-19 18:13:07.421  INFO 87712 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b259e4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 18:13:07.748  INFO 87712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 18:13:07.769  INFO 87712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 18:13:07.769  INFO 87712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 18:13:07.872  INFO 87712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 18:13:07.872 DEBUG 87712 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 18:13:07.872  INFO 87712 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1527 ms
+2019-10-19 18:13:08.263  INFO 87712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-19 18:13:08.400  INFO 87712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-19 18:13:08.449  INFO 87712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-19 18:13:08.494  INFO 87712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-19 18:13:08.495  INFO 87712 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-19 18:13:08.609  INFO 87712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-19 18:13:08.715  INFO 87712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-19 18:13:08.819  WARN 87712 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+2019-10-19 18:13:08.819  INFO 87712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-19 18:13:09.099  INFO 87712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-19 18:13:09.102  INFO 87712 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-19 18:13:09.111  INFO 87712 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-19 18:13:09.115 ERROR 87712 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.thoughtworks.parking_lot.ParkingLotApplication.main(ParkingLotApplication.java:10) ~[main/:na]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.thoughtworks.parking_lot.Entity.ParkingLot
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 16 common frames omitted
+
+2019-10-19 18:13:50.783  INFO 103484 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 103484 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 18:13:50.785  INFO 103484 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 18:13:51.445  INFO 103484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 18:13:51.491  INFO 103484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 1 repository interfaces.
+2019-10-19 18:13:51.802  INFO 103484 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d02a86fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 18:13:52.103  INFO 103484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 18:13:52.123  INFO 103484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 18:13:52.123  INFO 103484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 18:13:52.235  INFO 103484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 18:13:52.236 DEBUG 103484 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 18:13:52.236  INFO 103484 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1423 ms
+2019-10-19 18:13:52.615  INFO 103484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-19 18:13:52.752  INFO 103484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-19 18:13:52.803  INFO 103484 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-19 18:13:52.850  INFO 103484 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-19 18:13:52.851  INFO 103484 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-19 18:13:52.963  INFO 103484 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-19 18:13:53.073  INFO 103484 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-19 18:13:53.528  INFO 103484 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@48b09105'
+2019-10-19 18:13:53.530  INFO 103484 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-19 18:13:53.791 DEBUG 103484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 18:13:53.902  INFO 103484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 18:13:53.908 DEBUG 103484 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 18:13:53.934  WARN 103484 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-19 18:13:53.955 DEBUG 103484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-19 18:13:53.968 DEBUG 103484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 18:13:53.974 DEBUG 103484 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 18:13:54.161  INFO 103484 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-19 18:13:54.216  INFO 103484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-19 18:13:54.218  INFO 103484 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 3.84 seconds (JVM running for 4.138)
+2019-10-19 18:19:22.353  INFO 103880 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 103880 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 18:19:22.355  INFO 103880 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 18:19:23.037  INFO 103880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 18:19:23.084  INFO 103880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-10-19 18:19:23.418  INFO 103880 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73f8c82d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 18:19:23.742  INFO 103880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 18:19:23.773  INFO 103880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 18:19:23.773  INFO 103880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 18:19:23.972  INFO 103880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 18:19:23.972 DEBUG 103880 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 18:19:23.972  INFO 103880 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1581 ms
+2019-10-19 18:19:24.358  INFO 103880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-19 18:19:24.507  INFO 103880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-19 18:19:24.551  INFO 103880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-19 18:19:24.597  INFO 103880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-19 18:19:24.598  INFO 103880 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-19 18:19:24.773  INFO 103880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-19 18:19:24.936  INFO 103880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-19 18:19:25.396  INFO 103880 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4ff66917'
+2019-10-19 18:19:25.398  INFO 103880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-19 18:19:25.613 DEBUG 103880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 18:19:25.835  INFO 103880 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 18:19:25.843 DEBUG 103880 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 18:19:25.871  WARN 103880 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-19 18:19:25.892 DEBUG 103880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-19 18:19:25.905 DEBUG 103880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 18:19:25.913 DEBUG 103880 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 18:19:26.088  INFO 103880 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-19 18:19:26.142  INFO 103880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-19 18:19:26.143  INFO 103880 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 4.276 seconds (JVM running for 4.645)
+2019-10-19 18:19:59.731  INFO 103880 --- [http-nio-8081-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-19 18:19:59.731  INFO 103880 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-19 18:19:59.731 DEBUG 103880 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-19 18:19:59.738 DEBUG 103880 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-19 18:19:59.738  INFO 103880 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-19 18:19:59.740 DEBUG 103880 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-10-19 18:19:59.743 DEBUG 103880 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-10-19 18:19:59.781 DEBUG 103880 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-10-19 18:34:14.727 DEBUG 103880 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/parkingLots", parameters={}
+2019-10-19 18:34:14.730 DEBUG 103880 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot)
+2019-10-19 18:34:14.825 DEBUG 103880 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.thoughtworks.parking_lot.Entity.ParkingLot@1b9986b1]
+2019-10-19 18:34:14.883 DEBUG 103880 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-19 18:34:14.892 DEBUG 103880 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@9d618d2]
+2019-10-19 18:34:14.899 DEBUG 103880 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
