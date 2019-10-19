@@ -18,4 +18,10 @@ public class ParkingLotController {
     public ParkingLot addParkingLot(@RequestBody ParkingLot parkingLot) {
         return parkingLotService.save(parkingLot);
     }
+
+    @DeleteMapping(value = "/{name}", produces = {"application/json"})
+    @ResponseStatus(value = HttpStatus.CREATED)
+    public ParkingLot deleteParkingLot(@PathVariable String name) {
+        return parkingLotService.delete(name);
+    }
 }

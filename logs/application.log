@@ -667,3 +667,70 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2019-10-19 18:43:38.491 DEBUG 102696 --- [Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.Entity.ParkingLot@215f2d17]
 2019-10-19 18:43:38.512 DEBUG 102696 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4081f425, started on Sat Oct 19 18:43:37 CST 2019
 2019-10-19 18:43:38.514  INFO 102696 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:07:21.629  INFO 109936 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL14-W10 with PID 109936 (started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 19:07:21.630  INFO 109936 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-19 19:07:21.640 DEBUG 109936 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f33ed12
+2019-10-19 19:07:22.487 DEBUG 109936 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 19:07:22.698  INFO 109936 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:07:22.708 DEBUG 109936 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 19:07:22.756 DEBUG 109936 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-10-19 19:07:22.778 DEBUG 109936 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 19:07:22.789 DEBUG 109936 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 19:07:22.855  INFO 109936 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-19 19:07:22.856  INFO 109936 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-19 19:07:22.865  INFO 109936 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2019-10-19 19:07:22.892  INFO 109936 --- [Test worker] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.534 seconds (JVM running for 2.382)
+2019-10-19 19:07:22.933 DEBUG 109936 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.deleteParkingLot(java.lang.String)
+2019-10-19 19:07:22.952 DEBUG 109936 --- [Test worker] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-19 19:07:22.980 DEBUG 109936 --- [Test worker] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@707cb58]
+2019-10-19 19:07:22.998 DEBUG 109936 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@f33ed12, started on Sat Oct 19 19:07:21 CST 2019
+2019-10-19 19:07:22.999  INFO 109936 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:07:55.830  INFO 73120 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL14-W10 with PID 73120 (D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2\build\classes\java\main started by ECHONMI in D:\ECHONMI\ECHONMI_ITA-JAVA\Day10_Parking_Lot_Spring_Boot_Application2)
+2019-10-19 19:07:55.833  INFO 73120 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 19:07:56.468  INFO 73120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 19:07:56.515  INFO 73120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-10-19 19:07:56.826  INFO 73120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd4c6728] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 19:07:57.132  INFO 73120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-19 19:07:57.154  INFO 73120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 19:07:57.154  INFO 73120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 19:07:57.263  INFO 73120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 19:07:57.263 DEBUG 73120 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-19 19:07:57.263  INFO 73120 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1403 ms
+2019-10-19 19:07:57.657  INFO 73120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-19 19:07:57.802  INFO 73120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-19 19:07:57.848  INFO 73120 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-19 19:07:57.894  INFO 73120 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-19 19:07:57.895  INFO 73120 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-19 19:07:58.005  INFO 73120 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-19 19:07:58.111  INFO 73120 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-19 19:07:58.544  INFO 73120 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@30eb55c9'
+2019-10-19 19:07:58.546  INFO 73120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-19 19:07:58.806 DEBUG 73120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-19 19:07:58.926  INFO 73120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:07:58.931 DEBUG 73120 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-19 19:07:58.957  WARN 73120 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-19 19:07:58.995 DEBUG 73120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-10-19 19:07:59.016 DEBUG 73120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-19 19:07:59.022 DEBUG 73120 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-19 19:07:59.196  INFO 73120 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-19 19:07:59.253  INFO 73120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-19 19:07:59.255  INFO 73120 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 3.844 seconds (JVM running for 4.147)
+2019-10-19 19:08:16.212  INFO 73120 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-19 19:08:16.212  INFO 73120 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-19 19:08:16.213 DEBUG 73120 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-19 19:08:16.220 DEBUG 73120 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-19 19:08:16.221  INFO 73120 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-19 19:08:16.231 DEBUG 73120 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/parkingLots", parameters={}
+2019-10-19 19:08:16.236 DEBUG 73120 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot)
+2019-10-19 19:08:16.287 DEBUG 73120 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.thoughtworks.parking_lot.Entity.ParkingLot@7398ed3]
+2019-10-19 19:08:16.349 DEBUG 73120 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-19 19:08:16.359 DEBUG 73120 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@a70fb55]
+2019-10-19 19:08:16.370 DEBUG 73120 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-10-19 19:08:33.408 DEBUG 73120 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : DELETE "/parkingLots/Parking%20Lot%20Mall%20Of%20Asia", parameters={}
+2019-10-19 19:08:33.409 DEBUG 73120 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.deleteParkingLot(java.lang.String)
+2019-10-19 19:08:33.433  INFO 73120 --- [http-nio-8081-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-19 19:08:33.525 DEBUG 73120 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-19 19:08:33.525 DEBUG 73120 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@2e13f22b]
+2019-10-19 19:08:33.526 DEBUG 73120 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED

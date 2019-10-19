@@ -1,5 +1,6 @@
 package com.thoughtworks.parking_lot.Controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
 import com.thoughtworks.parking_lot.Service.ParkingLotService;
@@ -15,6 +16,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -43,5 +45,13 @@ public class ParkingLotControllerTest {
         result.andExpect(status().isCreated());
     }
 
+    @Test
+    public void should_return_status_200_when_delete_parkingLot() throws Exception {
+        ParkingLot parkingLot = new ParkingLot();
+        when(parkingLotService.delete("Mall of Asia")).thenReturn(parkingLot);
 
+        ResultActions result = mvc.perform(delete("/parkingLots/{name}", "Mall of Asia")
+                .contentType(MediaType.APPLICATION_JSON));
+        result.andExpect(status().isCreated());
+    }
 }
