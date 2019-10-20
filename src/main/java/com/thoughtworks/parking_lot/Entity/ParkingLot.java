@@ -1,9 +1,8 @@
 package com.thoughtworks.parking_lot.Entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 public class ParkingLot {
@@ -17,6 +16,9 @@ public class ParkingLot {
 
     @NotNull
     private String location;
+
+    @OneToMany(mappedBy = "parkingLot")
+    private List<ParkingOrders> parkingOrders;
 
     public String getName() {
         return name;
@@ -40,5 +42,13 @@ public class ParkingLot {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public List<ParkingOrders> getParkingOrders() {
+        return parkingOrders;
+    }
+
+    public void setParkingOrders(List<ParkingOrders> parkingOrders) {
+        this.parkingOrders = parkingOrders;
     }
 }
