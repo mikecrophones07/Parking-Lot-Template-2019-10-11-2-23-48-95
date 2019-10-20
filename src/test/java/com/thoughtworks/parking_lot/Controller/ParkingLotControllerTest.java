@@ -1,15 +1,10 @@
 package com.thoughtworks.parking_lot.Controller;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.net.httpserver.Authenticator;
-import com.thoughtworks.parking_lot.Dto.ErrorResponse;
 import com.thoughtworks.parking_lot.Dto.StatusResponse;
 import com.thoughtworks.parking_lot.Dto.TypeValuePairs;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
 import com.thoughtworks.parking_lot.Service.ParkingLotService;
-import org.graalvm.compiler.graph.SuccessorEdges;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +17,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 import static org.hamcrest.Matchers.is;
@@ -68,9 +62,9 @@ public class ParkingLotControllerTest {
 
     @Test
     public void should_return_status_bad_request_when_delete_parkingLot() throws Exception {
-        ErrorResponse errorResponse = new ErrorResponse();
+        StatusResponse errorResponse = new StatusResponse();
         errorResponse.setStatusCode(404);
-        errorResponse.setMessage("Cannot found Entity upon validation");
+        errorResponse.setStatusMsg("Cannot found Entity upon validation");
 
         ParkingLot parkingLot = new ParkingLot();
         when(parkingLotService.delete("Mall of Asia a")).thenReturn(parkingLot);
@@ -78,7 +72,7 @@ public class ParkingLotControllerTest {
         ResultActions result = mvc.perform(delete("/parkingLots/{name}", "Mall of Asia")
                 .contentType(MediaType.APPLICATION_JSON));
         result.andExpect(status().isBadRequest())
-                .andExpect(jsonPath("$.message", is(errorResponse.getMessage())));
+                .andExpect(jsonPath("$.statusMsg", is(errorResponse.getStatusMsg())));
     }
 
 

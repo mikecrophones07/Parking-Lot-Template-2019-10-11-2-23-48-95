@@ -30,7 +30,7 @@ public class ParkingLotController {
     public ResponseEntity<ParkingLot> deleteParkingLot(@PathVariable String name) throws NotFoundException {
         ParkingLot deletedParkingLot = parkingLotService.delete(name);
         if(Objects.nonNull(deletedParkingLot)){
-            return new ResponseEntity<>(deletedParkingLot, HttpStatus.CREATED);
+            return new ResponseEntity<>(deletedParkingLot, HttpStatus.OK);
         }
         throw new NotFoundException(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
     }

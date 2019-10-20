@@ -1,6 +1,6 @@
 package com.thoughtworks.parking_lot.Controller;
 
-import com.thoughtworks.parking_lot.Dto.ErrorResponse;
+import com.thoughtworks.parking_lot.Dto.StatusResponse;
 import javassist.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -14,10 +14,10 @@ public class RestControllerAdvice {
     @ExceptionHandler(value = NotFoundException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     @ResponseBody
-    public ErrorResponse notFoundException(NotFoundException ex){
-        ErrorResponse errorResponse = new ErrorResponse();
+    public StatusResponse notFoundException(NotFoundException ex){
+        StatusResponse errorResponse = new StatusResponse();
         errorResponse.setStatusCode(404);
-        errorResponse.setMessage(ex.getMessage());
+        errorResponse.setStatusMsg(ex.getMessage());
         return errorResponse;
     }
 }
