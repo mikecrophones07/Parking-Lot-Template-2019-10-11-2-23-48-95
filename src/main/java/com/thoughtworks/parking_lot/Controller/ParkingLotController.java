@@ -41,8 +41,8 @@ public class ParkingLotController {
         return parkingLotService.getAllParkingLots(page, pageSize);
     }
 
-    @GetMapping(value = "/{name}", produces = {"application/json"})
-    public ResponseEntity<ParkingLot> getSpecificParkingLot(@PathVariable String name) {
+    @GetMapping(value = "/name", produces = {"application/json"})
+    public ResponseEntity<ParkingLot> getSpecificParkingLot(@RequestParam String name) {
         ParkingLot fetchedParkingLot = parkingLotService.getSpecificParkingLot(name);
         return new ResponseEntity<>(fetchedParkingLot, HttpStatus.OK);
     }

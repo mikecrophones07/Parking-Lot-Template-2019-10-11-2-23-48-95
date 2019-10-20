@@ -95,8 +95,9 @@ public class ParkingLotControllerTest {
         parkingLot.setName("Mall of Asia");
         when(parkingLotService.getSpecificParkingLot("Mall of Asia")).thenReturn(parkingLot);
 
-        ResultActions result = mvc.perform(get("/parkingLots/{name}", "Mall of Asia")
-                .contentType(MediaType.APPLICATION_JSON));
+        ResultActions result = mvc.perform(get("/parkingLots/name")
+                .contentType(MediaType.APPLICATION_JSON)
+                .param("name","Mall of Asia"));
         result.andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(parkingLot.getName())));
     }
