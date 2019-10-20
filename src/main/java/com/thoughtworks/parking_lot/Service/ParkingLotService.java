@@ -47,14 +47,17 @@ public class ParkingLotService {
         TypeValuePairs valuePair = new TypeValuePairs();
 
         ParkingLot fetchedParkingLot = parkingLotRepo.findByName(name);
-        fetchedParkingLot.setCapacity(capacity);
-        parkingLotRepo.save(fetchedParkingLot);
+        if(Objects.nonNull(fetchedParkingLot)) {
+            fetchedParkingLot.setCapacity(capacity);
+            parkingLotRepo.save(fetchedParkingLot);
 
-        valuePair.setType("Capacity");
-        valuePair.setValue(capacity.toString());
-        response.setStatusMsg("Success updating capacity");
-        response.setStatusCode(200);
-        response.setTypeValuePairs(Collections.singletonList(valuePair));
-        return response;
+            valuePair.setType("Capacity");
+            valuePair.setValue(capacity.toString());
+            response.setStatusMsg("Success updating capacity");
+            response.setStatusCode(200);
+            response.setTypeValuePairs(Collections.singletonList(valuePair));
+            return response;
+        }
+        return null;
     }
 }

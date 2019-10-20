@@ -30,6 +30,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ActiveProfiles(value = "Test")
 public class ParkingLotControllerTest {
 
+    private static final String CANNOT_FOUND_ENTITY_UPON_VALIDATION = "Cannot found Entity upon validation";
+    private static final String MALL_OF_ASIA = "Mall of Asia";
+
     @Autowired
     private MockMvc mvc;
 
@@ -53,9 +56,9 @@ public class ParkingLotControllerTest {
     @Test
     public void should_return_status_Ok_when_delete_parkingLot() throws Exception {
         ParkingLot parkingLot = new ParkingLot();
-        when(parkingLotService.delete("Mall of Asia")).thenReturn(parkingLot);
+        when(parkingLotService.delete(MALL_OF_ASIA)).thenReturn(parkingLot);
 
-        ResultActions result = mvc.perform(delete("/parkingLots/{name}", "Mall of Asia")
+        ResultActions result = mvc.perform(delete("/parkingLots/{name}", MALL_OF_ASIA)
                 .contentType(MediaType.APPLICATION_JSON));
         result.andExpect(status().isOk());
     }
@@ -64,12 +67,12 @@ public class ParkingLotControllerTest {
     public void should_return_status_bad_request_when_delete_parkingLot() throws Exception {
         StatusResponse errorResponse = new StatusResponse();
         errorResponse.setStatusCode(404);
-        errorResponse.setStatusMsg("Cannot found Entity upon validation");
+        errorResponse.setStatusMsg(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
 
         ParkingLot parkingLot = new ParkingLot();
         when(parkingLotService.delete("Mall of Asia a")).thenReturn(parkingLot);
 
-        ResultActions result = mvc.perform(delete("/parkingLots/{name}", "Mall of Asia")
+        ResultActions result = mvc.perform(delete("/parkingLots/{name}", MALL_OF_ASIA)
                 .contentType(MediaType.APPLICATION_JSON));
         result.andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.statusMsg", is(errorResponse.getStatusMsg())));
@@ -97,7 +100,7 @@ public class ParkingLotControllerTest {
 
         ResultActions result = mvc.perform(get("/parkingLots/specific")
                 .contentType(MediaType.APPLICATION_JSON)
-                .param("name","Mall of Asia"));
+                .param("name",MALL_OF_ASIA));
         result.andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(parkingLot.getName())));
     }
@@ -113,8 +116,20 @@ public class ParkingLotControllerTest {
 
         ResultActions result = mvc.perform(patch("/parkingLots/{capacity}", "11")
                 .contentType(MediaType.APPLICATION_JSON)
-                .param("name","Mall of Asia"));
+                .param("name",MALL_OF_ASIA));
         result.andExpect(status().isOk())
                 .andExpect(jsonPath("$.typeValuePairs[0].value", is("11")));
+    }
+
+    @Test
+    public void should_return_status_bad_request_when_non_existing_name_is_updated() throws Exception {
+        StatusResponse response = new StatusResponse();
+        response.setStatusMsg(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
+
+        ResultActions result = mvc.perform(patch("/parkingLots/{capacity}", "11")
+                .contentType(MediaType.APPLICATION_JSON)
+                .param("name",MALL_OF_ASIA));
+        result.andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.statusMsg", is(response.getStatusMsg())));
     }
 }
