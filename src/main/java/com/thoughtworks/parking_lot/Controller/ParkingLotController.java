@@ -1,5 +1,6 @@
 package com.thoughtworks.parking_lot.Controller;
 
+import com.thoughtworks.parking_lot.Dto.StatusResponse;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
 import com.thoughtworks.parking_lot.Service.ParkingLotService;
 import javassist.NotFoundException;
@@ -41,9 +42,16 @@ public class ParkingLotController {
         return parkingLotService.getAllParkingLots(page, pageSize);
     }
 
-    @GetMapping(value = "/name", produces = {"application/json"})
+    @GetMapping(value = "/specific", produces = {"application/json"})
     public ResponseEntity<ParkingLot> getSpecificParkingLot(@RequestParam String name) {
         ParkingLot fetchedParkingLot = parkingLotService.getSpecificParkingLot(name);
         return new ResponseEntity<>(fetchedParkingLot, HttpStatus.OK);
+    }
+
+    @PatchMapping(value = "/{capacity}", produces = {"application/json"})
+    public ResponseEntity<StatusResponse> updateCapacityOfParkingLot(@RequestParam String name,
+                                                                     @PathVariable Integer capacity) {
+        StatusResponse successResponse = parkingLotService.updateCapacity(name, capacity);
+        return new ResponseEntity<>(successResponse, HttpStatus.OK);
     }
 }

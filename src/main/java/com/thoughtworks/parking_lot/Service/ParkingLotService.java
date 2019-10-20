@@ -1,12 +1,14 @@
 package com.thoughtworks.parking_lot.Service;
 
+import com.thoughtworks.parking_lot.Dto.StatusResponse;
+import com.thoughtworks.parking_lot.Dto.TypeValuePairs;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
 import com.thoughtworks.parking_lot.Repository.ParkingLotRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.Collections;
 import java.util.Objects;
 
 @Service
@@ -38,5 +40,21 @@ public class ParkingLotService {
             return fetchedParkingLot;
         }
         return null;
+    }
+
+    public StatusResponse updateCapacity(String name, Integer capacity) {
+        StatusResponse response = new StatusResponse();
+        TypeValuePairs valuePair = new TypeValuePairs();
+
+        ParkingLot fetchedParkingLot = parkingLotRepo.findByName(name);
+        fetchedParkingLot.setCapacity(capacity);
+        parkingLotRepo.save(fetchedParkingLot);
+
+        valuePair.setType("Capacity");
+        valuePair.setValue(capacity.toString());
+        response.setStatusMsg("Success updating capacity");
+        response.setStatusCode(200);
+        response.setTypeValuePairs(Collections.singletonList(valuePair));
+        return response;
     }
 }

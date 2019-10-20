@@ -3,9 +3,13 @@ package com.thoughtworks.parking_lot.Controller;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.net.httpserver.Authenticator;
 import com.thoughtworks.parking_lot.Dto.ErrorResponse;
+import com.thoughtworks.parking_lot.Dto.StatusResponse;
+import com.thoughtworks.parking_lot.Dto.TypeValuePairs;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
 import com.thoughtworks.parking_lot.Service.ParkingLotService;
+import org.graalvm.compiler.graph.SuccessorEdges;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +22,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.when;
@@ -95,10 +101,26 @@ public class ParkingLotControllerTest {
         parkingLot.setName("Mall of Asia");
         when(parkingLotService.getSpecificParkingLot("Mall of Asia")).thenReturn(parkingLot);
 
-        ResultActions result = mvc.perform(get("/parkingLots/name")
+        ResultActions result = mvc.perform(get("/parkingLots/specific")
                 .contentType(MediaType.APPLICATION_JSON)
                 .param("name","Mall of Asia"));
         result.andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(parkingLot.getName())));
+    }
+
+    @Test
+    public void should_return_ok_when_patch_capacity_of_specific_parking_lot() throws Exception {
+        StatusResponse response = new StatusResponse();
+        TypeValuePairs valuePairs = new TypeValuePairs();
+        valuePairs.setType("Capacity");
+        valuePairs.setValue("11");
+        response.setTypeValuePairs(Collections.singletonList(valuePairs));
+        when(parkingLotService.updateCapacity("Mall of Asia", 11)).thenReturn(response);
+
+        ResultActions result = mvc.perform(patch("/parkingLots/{capacity}", "11")
+                .contentType(MediaType.APPLICATION_JSON)
+                .param("name","Mall of Asia"));
+        result.andExpect(status().isOk())
+                .andExpect(jsonPath("$.typeValuePairs[0].value", is("11")));
     }
 }
