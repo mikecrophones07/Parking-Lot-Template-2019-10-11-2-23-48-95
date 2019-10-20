@@ -1,7 +1,9 @@
 package com.thoughtworks.parking_lot.Controller;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.thoughtworks.parking_lot.Dto.ErrorResponse;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
 import com.thoughtworks.parking_lot.Service.ParkingLotService;
 import org.junit.Test;
@@ -15,9 +17,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
+import java.util.ArrayList;
+
+import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
@@ -46,12 +51,28 @@ public class ParkingLotControllerTest {
     }
 
     @Test
-    public void should_return_status_200_when_delete_parkingLot() throws Exception {
+    public void should_return_status_Ok_when_delete_parkingLot() throws Exception {
         ParkingLot parkingLot = new ParkingLot();
         when(parkingLotService.delete("Mall of Asia")).thenReturn(parkingLot);
 
         ResultActions result = mvc.perform(delete("/parkingLots/{name}", "Mall of Asia")
                 .contentType(MediaType.APPLICATION_JSON));
-        result.andExpect(status().isCreated());
+        result.andExpect(status().isOk());
     }
+
+    @Test
+    public void should_return_status_bad_request_when_delete_parkingLot() throws Exception {
+        ErrorResponse errorResponse = new ErrorResponse();
+        errorResponse.setStatusCode(404);
+        errorResponse.setMessage("Cannot found Entity upon validation");
+
+        ParkingLot parkingLot = new ParkingLot();
+        when(parkingLotService.delete("Mall of Asia a")).thenReturn(parkingLot);
+
+        ResultActions result = mvc.perform(delete("/parkingLots/{name}", "Mall of Asia")
+                .contentType(MediaType.APPLICATION_JSON));
+        result.andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message", is(errorResponse.getMessage())));
+    }
+
 }
