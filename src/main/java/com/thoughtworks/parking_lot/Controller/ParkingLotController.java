@@ -34,4 +34,11 @@ public class ParkingLotController {
         }
         throw new NotFoundException(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
     }
+
+    @GetMapping(value = "/all", produces = {"application/json"})
+    @ResponseStatus(value = HttpStatus.OK)
+    public Iterable<ParkingLot> getAllParkingLots(@RequestParam Integer page,
+                                                  @RequestParam Integer pageSize) {
+        return parkingLotService.getAllParkingLots(page, pageSize);
+    }
 }

@@ -75,4 +75,17 @@ public class ParkingLotControllerTest {
                 .andExpect(jsonPath("$.message", is(errorResponse.getMessage())));
     }
 
+
+    @Test
+    public void should_return_all_parkingLot_given_page_and_page_size() throws Exception {
+        Iterable<ParkingLot> parkingLotList = new ArrayList<>();
+        when(parkingLotService.getAllParkingLots(1, 5)).thenReturn(parkingLotList);
+
+        ResultActions result = mvc.perform(get("/parkingLots/all")
+                .contentType(MediaType.APPLICATION_JSON)
+                .param("page", "1")
+                .param("pageSize", "5"));
+        result.andExpect(status().isOk())
+                .andExpect(jsonPath("$", is(parkingLotList)));
+    }
 }

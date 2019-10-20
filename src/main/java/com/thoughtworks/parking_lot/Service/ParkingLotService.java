@@ -27,4 +27,8 @@ public class ParkingLotService {
         }
         return null;
     }
+
+    public Iterable<ParkingLot> getAllParkingLots(Integer page, Integer pageSize) {
+        return parkingLotRepo.findAll(PageRequest.of(page, pageSize));
+    }
 }
