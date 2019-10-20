@@ -26,11 +26,10 @@ public class ParkingLotController {
     }
 
     @DeleteMapping(value = "/{name}", produces = {"application/json"})
-    @ResponseStatus(value = HttpStatus.CREATED)
     public ResponseEntity<ParkingLot> deleteParkingLot(@PathVariable String name) throws NotFoundException {
         ParkingLot deletedParkingLot = parkingLotService.delete(name);
         if(Objects.nonNull(deletedParkingLot)){
-            return new ResponseEntity<>(deletedParkingLot, HttpStatus.OK);
+            return new ResponseEntity<>(deletedParkingLot, HttpStatus.CREATED);
         }
         throw new NotFoundException(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
     }
@@ -40,5 +39,11 @@ public class ParkingLotController {
     public Iterable<ParkingLot> getAllParkingLots(@RequestParam Integer page,
                                                   @RequestParam Integer pageSize) {
         return parkingLotService.getAllParkingLots(page, pageSize);
+    }
+
+    @GetMapping(value = "/{name}", produces = {"application/json"})
+    public ResponseEntity<ParkingLot> getSpecificParkingLot(@PathVariable String name) {
+        ParkingLot fetchedParkingLot = parkingLotService.getSpecificParkingLot(name);
+        return new ResponseEntity<>(fetchedParkingLot, HttpStatus.OK);
     }
 }

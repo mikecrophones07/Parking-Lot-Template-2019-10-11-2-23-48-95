@@ -88,4 +88,16 @@ public class ParkingLotControllerTest {
         result.andExpect(status().isOk())
                 .andExpect(jsonPath("$", is(parkingLotList)));
     }
+
+    @Test
+    public void should_return_ok_specific_parkingLot_when_find_parking_lot_by_name() throws Exception {
+        ParkingLot parkingLot = new ParkingLot();
+        parkingLot.setName("Mall of Asia");
+        when(parkingLotService.getSpecificParkingLot("Mall of Asia")).thenReturn(parkingLot);
+
+        ResultActions result = mvc.perform(get("/parkingLots/{name}", "Mall of Asia")
+                .contentType(MediaType.APPLICATION_JSON));
+        result.andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is(parkingLot.getName())));
+    }
 }

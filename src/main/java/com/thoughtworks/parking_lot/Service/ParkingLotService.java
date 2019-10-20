@@ -31,4 +31,12 @@ public class ParkingLotService {
     public Iterable<ParkingLot> getAllParkingLots(Integer page, Integer pageSize) {
         return parkingLotRepo.findAll(PageRequest.of(page, pageSize));
     }
+
+    public ParkingLot getSpecificParkingLot(String name) {
+        ParkingLot fetchedParkingLot = parkingLotRepo.findByName(name);
+        if(Objects.nonNull(fetchedParkingLot)){
+            return fetchedParkingLot;
+        }
+        return null;
+    }
 }
