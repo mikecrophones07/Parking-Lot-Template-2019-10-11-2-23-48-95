@@ -15,8 +15,6 @@ import java.util.Objects;
 @RequestMapping(value = "parkingLots")
 public class ParkingOrdersController{
 
-    private static final String CANNOT_FOUND_ENTITY_UPON_VALIDATION = "Cannot found Entity upon validation";
-
     @Autowired
     private ParkingOrdersService parkingOrderService;
 
@@ -26,10 +24,14 @@ public class ParkingOrdersController{
                                                        @RequestBody ParkingOrders parkingOrders)
             throws NotFoundException {
         ParkingOrders savedParkingOrder = parkingOrderService.save(name, parkingOrders);
-        if(Objects.nonNull(savedParkingOrder)){
-            return new ResponseEntity<>(savedParkingOrder, HttpStatus.OK);
-        }
-        throw new NotFoundException(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
+        return new ResponseEntity<>(savedParkingOrder, HttpStatus.OK);
+
+    }
+
+    @PatchMapping(value = "/orders/{plateNumber}", produces = {"application/json"})
+    public ResponseEntity<ParkingOrders> updateCapacityOfParkingLot(@PathVariable String plateNumber) throws NotFoundException {
+        ParkingOrders resultParkingOrders = parkingOrderService.updateOrder(plateNumber);
+        return new ResponseEntity<>(resultParkingOrders, HttpStatus.OK);
     }
 
 }

@@ -60,10 +60,6 @@ public class ParkingOrders {
         this.status = status;
     }
 
-    public ParkingLot getParkingLot() {
-        return parkingLot;
-    }
-
     public void setParkingLot(ParkingLot parkingLot) {
         this.parkingLot = parkingLot;
     }
