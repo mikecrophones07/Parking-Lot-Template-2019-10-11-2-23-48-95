@@ -3,13 +3,16 @@ package com.thoughtworks.parking_lot.Service;
 import com.thoughtworks.parking_lot.Dto.StatusResponse;
 import com.thoughtworks.parking_lot.Dto.TypeValuePairs;
 import com.thoughtworks.parking_lot.Entity.ParkingLot;
+import com.thoughtworks.parking_lot.Entity.ParkingOrders;
 import com.thoughtworks.parking_lot.Repository.ParkingLotRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Service
 public class ParkingLotService {
@@ -57,6 +60,16 @@ public class ParkingLotService {
             response.setStatusCode(200);
             response.setTypeValuePairs(Collections.singletonList(valuePair));
             return response;
+        }
+        return null;
+    }
+
+    public Boolean isParkingLotFull(ParkingLot parkingLot){
+        if(Objects.nonNull(parkingLot)){
+            List<ParkingOrders> orders = parkingLot.getParkingOrders();
+            Integer openStatus = (int) orders.stream().filter(order -> order.getStatus().equals(true)).count();
+            Boolean isFull = (parkingLot.getCapacity() - openStatus <= 0);
+            return isFull;
         }
         return null;
     }

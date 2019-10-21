@@ -17,6 +17,7 @@ import java.util.Objects;
 public class ParkingOrdersService {
 
     private static final String CANNOT_FOUND_ENTITY_UPON_VALIDATION = "Cannot found Entity upon validation";
+    public static final String PARKING_LOT_IS_FULL = "Parking lot is full";
 
     @Autowired
     private ParkingOrderRepo parkingOrderRepo;
@@ -27,10 +28,13 @@ public class ParkingOrdersService {
     public ParkingOrders save(String name, ParkingOrders parkingOrder) throws NotFoundException {
         ParkingLot fetchParkingLots = parkingLotService.getSpecificParkingLot(name);
         if(Objects.nonNull(fetchParkingLots)){
-            parkingOrder.setCreationTime(generateCurrentTime());
-            parkingOrder.setStatus(true);
-            parkingOrder.setParkingLot(fetchParkingLots);
-            return parkingOrderRepo.save(parkingOrder);
+            if(!parkingLotService.isParkingLotFull(fetchParkingLots)) {
+                parkingOrder.setCreationTime(generateCurrentTime());
+                parkingOrder.setStatus(true);
+                parkingOrder.setParkingLot(fetchParkingLots);
+                return parkingOrderRepo.save(parkingOrder);
+            }
+            throw new NotFoundException(PARKING_LOT_IS_FULL);
         }
         throw new NotFoundException(CANNOT_FOUND_ENTITY_UPON_VALIDATION);
     }

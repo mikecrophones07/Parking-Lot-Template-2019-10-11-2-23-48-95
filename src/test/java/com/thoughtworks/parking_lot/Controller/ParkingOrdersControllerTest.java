@@ -50,6 +50,18 @@ public class ParkingOrdersControllerTest {
     }
 
     @Test
+    public void should_return_status_bad_request_when_parking_lot_is_full() throws Exception {
+
+        ParkingOrders parkingOrder = new ParkingOrders();
+        when(parkingOrdersService.save(MALL_OF_ASIA, parkingOrder)).thenThrow(new NotFoundException("Sample Test"));
+
+        ResultActions result = mvc.perform(post("/parkingLots/{name}/orders", MALL_OF_ASIA)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(parkingOrder)));
+        result.andExpect(status().isBadRequest());
+    }
+
+    @Test
     public void should_return_status_bad_request_when_save_parking_order_with_non_existing_parking_lot() throws Exception {
         ParkingOrders parkingOrder = new ParkingOrders();
         when(parkingOrdersService.save(MALL_OF_ASIA, parkingOrder)).thenReturn(parkingOrder);
